@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Tweet Generator</title>
 
+<style>
+
+body{
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(120deg,#4facfe,#00f2fe);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+margin:0;
+}
+
+.container{
+background:white;
+padding:40px;
+border-radius:12px;
+width:380px;
+box-shadow:0 12px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+text-align:center;
+color:#333;
+margin-bottom:5px;
+}
+
+p{
+text-align:center;
+color:#777;
+margin-bottom:20px;
+}
+
+input, select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#4facfe;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#2c8ef4;
+transform:scale(1.03);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🤖 AI Tweet Generator</h1>
+<p>Create tweets for any brand instantly</p>
+
+<form action="/generate" method="post">
+
+<label>Brand Name</label>
+<input type="text" name="brand" required>
+
+<label>Industry</label>
+<select name="industry">
+
+<option>Technology</option>
+<option>Sports</option>
+<option>Food</option>
+<option>Fashion</option>
+<option>Education</option>
+<option>Finance</option>
+<option>Travel</option>
+<option>Healthcare</option>
+<option>Entertainment</option>
+<option>Automobile</option>
+<option>Beauty</option>
+
+</select>
+
+<label>Campaign Objective</label>
+<input type="text" name="objective" placeholder="Engagement / Promotion">
+
+<label>Product</label>
+<input type="text" name="product">
+
+<br>
+
+<button type="submit">Generate AI Tweets 🚀</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
